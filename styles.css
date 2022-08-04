@@ -1,0 +1,154 @@
+/*
+=============== 
+Fonts
+===============
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,900&display=swap');
+
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+  /* dark shades of primary color*/
+  --clr-primary-1: #063251;
+  --clr-primary-2: hsl(205, 77%, 27%);
+  --clr-primary-3: hsl(205, 72%, 37%);
+  --clr-primary-4: hsl(205, 63%, 48%);
+  /* primary/main color */
+  --clr-primary-5: hsl(205, 78%, 60%);
+  /* lighter shades of primary color */
+  --clr-primary-6: hsl(205, 89%, 70%);
+  --clr-primary-7: hsl(205, 90%, 76%);
+  --clr-primary-8: hsl(205, 86%, 81%);
+  --clr-primary-9: hsl(205, 90%, 88%);
+  --clr-primary-10: hsl(205, 100%, 96%);
+  /* darkest grey - used for headings */
+  --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-grey-2: hsl(211, 39%, 23%);
+  --clr-grey-3: hsl(209, 34%, 30%);
+  --clr-grey-4: hsl(209, 28%, 39%);
+  /* grey used for paragraphs */
+  --clr-grey-5: hsl(210, 22%, 49%);
+  --clr-grey-6: hsl(209, 23%, 60%);
+  --clr-grey-7: hsl(211, 27%, 70%);
+  --clr-grey-8: hsl(210, 31%, 80%);
+  --clr-grey-9: hsl(212, 33%, 89%);
+  --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-white: #fff;
+  --clr-red-dark: hsl(360, 67%, 44%);
+  --clr-red-light: hsl(360, 71%, 66%);
+  --clr-green-dark: hsl(125, 67%, 44%);
+  --clr-green-light: hsl(125, 71%, 66%);
+  --clr-border: hsl(256, 82%, 52%);
+  --clr-black: #222;
+  --ff-primary: 'Roboto', sans-serif;
+  --ff-secondary: 'Open Sans', sans-serif;
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1170px;
+  --fixed-width: 620px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--clr-primary-3);
+  color: var(--clr-white);
+  font-family: var(--ff-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+h1 {
+  margin: 10px 0 0;
+}
+
+h3 {
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.cup {
+  background-color: var(--clr-white);
+  border: 4px solid var(--clr-border);
+  color: var(--clr-border);
+  border-radius: 0 0 40px 40px;
+  height: 330px;
+  width: 150px;
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.cup.cup-small {
+  height: 95px;
+  width: 50px;
+  border-radius: 0 0 15px 15px;
+  background-color: var(--clr-grey-10);
+  cursor: pointer;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 5px;
+  transition: 0.3s ease;
+}
+
+.cup.cup-small.full {
+  background-color: var(--fill-color);
+  color: var(--clr-white);
+}
+
+.cups {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+}
+
+.remained {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex: 1;
+  transition: 0.3s ease;
+}
+
+.remained span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.remained small {
+  font-size: 12px;
+}
+
+.percentage {
+  background-color: var(--clr-primary-6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 30px;
+  height: 0;
+  transition: 0.3s ease;
+}
+
+.text {
+  text-align: center;
+  margin: 0 0 5px;
+}
